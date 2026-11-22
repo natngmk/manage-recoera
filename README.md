@@ -39,7 +39,7 @@ claude
 Inside Claude Code:
 - `/mcp`: check that the connectors are connected
 - `/skills`: list the project skills
-- `/plugin`: browse the local `recoera-local` plugin marketplace
+- `/plugin`: see installed plugins (Shopify AI Toolkit)
 
 ## What's in here
 
@@ -50,7 +50,6 @@ Inside Claude Code:
 | `.claude/settings.json` | Shared permissions, connector and plugin settings |
 | `.claude/skills/` | Skills: `product-listing`, `order-report`, `inventory-check`, `customer-reply` |
 | `.claude/agents/` | Subagents: `store-ops` |
-| `plugins/` | In-repo plugin marketplace |
 | `docs/connectors.md` | Connector list and **how to add a new one** (store, Gmail, Sheets…) |
 | `docs/brand-voice.md` | Tone and formatting for customer-facing text |
 | `data/` | Reports and exports. `data/private/` is gitignored |

@@ -26,13 +26,5 @@
   "enableAllProjectMcpServers": true,
   "enabledPlugins": {
     "shopify-ai-toolkit@claude-plugins-official": true
-  },
-  "extraKnownMarketplaces": {
-    "recoera-local": {
-      "source": {
-        "source": "directory",
-        "path": "./plugins"
-      }
-    }
   }
 }
