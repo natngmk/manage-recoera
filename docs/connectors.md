@@ -8,7 +8,25 @@ direnv loads automatically.
 
 | Name | Purpose | Status |
 |------|---------|--------|
-| _(none yet)_ | | |
+| Shopify AI Toolkit (plugin) | Shopify docs/schemas, GraphQL validation, live store reads/writes via Shopify CLI | Enabled — run `shopify store auth` once per laptop |
+
+## Shopify setup (per laptop)
+
+The official plugin `shopify-ai-toolkit@claude-plugins-official` is enabled in `.claude/settings.json`, so
+opening `claude` here offers to install it. It has no MCP server; it uses Shopify CLI.
+
+1. Shopify CLI installed (`shopify version`).
+2. Authenticate the CLI against the store once (opens a browser):
+   ```sh
+   shopify store auth -s <your-store>.myshopify.com \
+     --scopes read_products,write_products,read_orders,read_inventory,write_inventory,read_locations,read_customers,read_reports
+   ```
+   Add or remove scopes as needed. Write scopes let Claude propose changes, and each `store execute`
+   call still asks for permission.
+3. Check it works: in `claude`, ask "show the first 5 products on my store".
+
+Telemetry: the plugin's skill scripts send usage data (queries, code) to shopify.dev by default. To opt
+out, set `OPT_OUT_INSTRUMENTATION=true` or create `~/.config/shopify-ai-toolkit/opt-out`.
 
 ## How to add a connector (e.g. store platform, Gmail, Google Sheets)
 
