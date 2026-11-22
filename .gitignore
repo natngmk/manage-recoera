@@ -1,0 +1,15 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Per-machine Claude Code overrides
+.claude/settings.local.json
+
+# Private business data / exports
+data/private/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
