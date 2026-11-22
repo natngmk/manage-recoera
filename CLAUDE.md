@@ -16,7 +16,6 @@ All connectors, skills, agents and plugins live in this repo (project scope), no
 - Connectors (MCP servers): `.mcp.json`. See `docs/connectors.md` for what each one is and how to add more.
 - Skills: `.claude/skills/<name>/SKILL.md`
 - Subagents: `.claude/agents/`
-- In-repo plugins: `plugins/` (local marketplace `recoera-local`)
 - Brand voice: `docs/brand-voice.md`
 - Reports and exports Claude produces: `data/`. Anything sensitive (customer data) goes in `data/private/` (gitignored).
 
