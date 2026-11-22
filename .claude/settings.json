@@ -1,18 +1,31 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "enableAllProjectMcpServers": true,
   "permissions": {
     "allow": [
       "Bash(git status:*)",
       "Bash(git log:*)",
       "Bash(git diff:*)",
       "Bash(ls:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(shopify version)",
+      "Bash(shopify search:*)",
+      "Bash(shopify doc:*)",
+      "Bash(shopify store info:*)",
+      "Bash(shopify store list:*)"
     ],
     "deny": [
       "Read(./.env)",
       "Read(./.env.*)"
+    ],
+    "ask": [
+      "Bash(shopify store execute:*)",
+      "Bash(shopify store bulk:*)",
+      "Bash(shopify store auth:*)"
     ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledPlugins": {
+    "shopify-ai-toolkit@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "recoera-local": {
@@ -21,6 +34,5 @@
         "path": "./plugins"
       }
     }
-  },
-  "enabledPlugins": {}
+  }
 }

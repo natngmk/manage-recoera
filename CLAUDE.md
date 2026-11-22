@@ -6,11 +6,13 @@ All connectors, skills, agents and plugins live in this repo (project scope), no
 ## Business context
 <!-- TODO: fill in -->
 - **What Recoera sells:** _TBD_
-- **Store platform:** _TBD (Shopify / WooCommerce / marketplace)_
+- **Store platform:** Shopify (store domain: _TBD_.myshopify.com)
 - **Main sales channels:** _TBD_
 - **Currency / markets:** _TBD_
 
 ## Where things live
+- Shopify: official **Shopify AI Toolkit** plugin (enabled in `.claude/settings.json`). It manages the store
+  through Shopify CLI (`shopify store auth` / `shopify store execute`). `store execute` always asks for permission.
 - Connectors (MCP servers): `.mcp.json`. See `docs/connectors.md` for what each one is and how to add more.
 - Skills: `.claude/skills/<name>/SKILL.md`
 - Subagents: `.claude/agents/`

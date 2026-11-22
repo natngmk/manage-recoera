@@ -11,6 +11,7 @@ any machine that clones the repo gets the same setup.
 | Claude Code | The AI assistant | `npm install -g @anthropic-ai/claude-code` or see claude.com/claude-code |
 | git | Version control | `xcode-select --install` |
 | GitHub CLI | PRs from the terminal | `brew install gh` then `gh auth login` |
+| Shopify CLI | Used by the Shopify plugin to manage the store | `npm install -g @shopify/cli` |
 | Node.js | Runs most MCP connectors (`npx`) | `brew install node` |
 | direnv | Loads `.env` secrets automatically | `brew install direnv`, then add `eval "$(direnv hook zsh)"` to `~/.zshrc` |
 | uv (optional) | Runs Python-based MCP connectors | `brew install uv` |
@@ -24,7 +25,11 @@ direnv allow             # once, so .env loads when you cd into this folder
 
 `.env` is gitignored, so set it up on each machine.
 
-## 3. Start
+## 3. Connect Shopify (once per laptop)
+
+See `docs/connectors.md` → *Shopify setup* for the `shopify store auth` command.
+
+## 4. Start
 
 ```sh
 cd manage-recoera
