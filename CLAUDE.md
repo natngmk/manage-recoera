@@ -6,9 +6,9 @@ All connectors, skills, agents and plugins live in this repo (project scope), no
 ## Business context
 <!-- TODO: fill in -->
 - **What Recoera sells:** _TBD_
-- **Store platform:** Shopify (store domain: _TBD_.myshopify.com)
+- **Store platform:** Shopify, store `ebdk0r-tb.myshopify.com` (shop name "My Store 3", trial plan)
+- **Currency:** SGD
 - **Main sales channels:** _TBD_
-- **Currency / markets:** _TBD_
 
 ## Where things live
 - Shopify: official **Shopify AI Toolkit** plugin (enabled in `.claude/settings.json`). It manages the store
